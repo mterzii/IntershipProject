@@ -1,0 +1,239 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+:root {
+  /*----COLOR----*/
+  --body-color: #d1e9f6;
+  --sidebar-color: #fff;
+  --primary-color: #695cfe;
+  --primary-color-light: #f6f5ff;
+  --toggle-color: #dddd;
+  --text-color: #707070;
+
+  /*----Transition----*/
+  --tran-03: all 0.2s ease;
+  --tran-04: all 0.3s ease;
+  --tran-05: all 0.4s ease;
+  --tran-06: all 0.5s ease;
+}
+
+body {
+  height: 100vh;
+  
+}
+
+.sidebar .text {
+  font-size: 16px;
+  font-weight: 500;
+  position: relative;
+  right: 5px;
+}
+
+.sidebar .image {
+  min-width: 90px;
+  display: flex;
+  align-items: center;
+}
+
+.header-text .name {
+  font-weight: 600;
+}
+
+.header-text .profession {
+  font-weight: 600;
+}
+
+/*-------Sidebar-------*/
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 270px;
+  padding: 10px 14px;
+  background-color: #f7f7f9;
+  margin: 0;
+  z-index: 1000;
+}
+
+.sidebar .image-text img {
+  margin-right: 15px;
+  width: 150px;
+  border-radius: 6px;
+}
+
+.sidebar header .image-text {
+  display: flex;
+  align-items: center;
+}
+
+/* 
+.sidebar header .toggle:hover {
+    transform: rotate(270deg); 
+    transition: 0.7s ease-in;
+} */
+
+/*------UL-Li-------*/
+
+ul {
+  list-style: none;
+}
+
+.menu-bar .menu-links .toggle {
+  font-size: 2.5rem;
+  position: absolute;
+  top: 13%;
+  left: 15px;
+}
+
+.menu-links .nav-link {
+  display: none;
+}
+
+.menu-links.show .nav-link {
+  display: block;
+}
+
+/*-----------/NAVLİNK-----------*/
+
+.nav-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 170px;
+  height: 70px;
+  background-color: #f6f5fe;
+  margin: 55px 0;
+  border-radius: 10%;
+  box-sizing: border-box;
+  padding: 0 10px;
+}
+
+.nav-link:hover {
+  background-color: #d1e9f6;
+  transition: 0.8s ease;
+}
+
+.nav-link p {
+  display: flex;
+  align-items: center;
+  margin: 0;
+}
+
+.sidebar li a {
+  text-decoration: none;
+}
+
+.sidebar li span {
+  color: rgb(56, 53, 53);
+  position: relative;
+  top: 15px;
+}
+
+.nav-link i {
+  color: #0e46a3;
+  position: relative;
+  top: 15px;
+  font-size: 2rem;
+}
+
+.nav-link:hover i {
+  color: #a02334;
+  transition: 0.2s ease-out;
+}
+
+.bx-menu {
+  font-size: 2.5rem;
+  position: relative;
+  top: 40px;
+  left: 13px;
+}
+.bxs-user-detail {
+  margin-right: 15px;
+}
+
+.bx-line-chart {
+  margin-right: 35px;
+}
+
+.menu-links {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s ease-out;
+}
+
+/* Show menu items when active */
+.menu-links.show {
+  max-height: 500px; /* Adjust this value based on the content height */
+  transition: max-height 0.5s ease-in;
+}
+
+/* Add transition for menu item display */
+.menu-links .nav-link {
+  opacity: 0;
+  transition: opacity 0.5s ease-in;
+}
+
+.menu-links.show .nav-link {
+  opacity: 1;
+}
+
+/* Menü simgesinin temel stili */
+#menu-toggle {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  left: 17px;
+}
+
+#menu-toggle .bar {
+  display: block;
+  width: 30px;
+  height: 3px;
+  background-color: #333;
+  margin: 6px 0;
+  transition: 0.3s;
+}
+
+/* X işareti dönüşümü için stil */
+#menu-toggle.active .bar:nth-child(1) {
+  transform: rotate(-45deg);
+  position: relative;
+  top: 5px;
+}
+
+#menu-toggle.active .bar:nth-child(2) {
+  opacity: 0;
+}
+
+#menu-toggle.active .bar:nth-child(3) {
+  transform: rotate(45deg);
+  position: relative;
+  top: -14px;
+}
+
+.Dashboard {
+  display: none; /* İlk başta gizli */
+}
+
+.Dashboard.show {
+  display: block; /* Tıklama ile görünür hale gelir */
+}
+
+.nav-link
+{
+cursor: pointer;
+}

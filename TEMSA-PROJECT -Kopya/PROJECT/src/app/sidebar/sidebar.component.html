@@ -1,0 +1,48 @@
+<link
+  href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+  rel="stylesheet"
+/>
+
+<nav class="sidebar">
+  <header>
+    <div class="image-text">
+      <span class="image">
+        <a routerLinkActive="router-link-active">
+          <img src="../assets/Temsa-Uye-Logo.png" alt="Logo" />
+        </a>
+      </span>
+    </div>
+
+    <i id="menu-toggle" class="bx bx-toggle" (click)="toggleMenu()">
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+    </i>
+  </header>
+
+  <div class="menu-bar">
+    <div class="menu">
+      <ul class="menu-links" #menuLinks>
+        <li class="nav-link Dashboard" (click)="showDashboard()" #Dashboard>
+          <a routerLink="/complexity" routerLinkActive="active">
+            <p>
+              <i class="bx bxs-user-detail"></i>
+              <span class="text nav-text">Dashboard</span>
+            </p>
+          </a>
+        </li>
+
+        <li class="nav-link">
+          <a routerLink="/charts">
+            <p>
+              <i class="bx bx-line-chart"></i>
+              <span class="text nav-text">CHARTS</span>
+            </p>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="bg"></div>

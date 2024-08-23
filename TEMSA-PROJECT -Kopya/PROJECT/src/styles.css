@@ -1,0 +1,21 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body
+{
+    font-family: 'Poppins', sans-serif;
+}
+
+
+/*
+body
+{
+    /* background: url('./assets/temsa-bg.png') center center / cover no-repeat;
+    font-family: 'Poppins', sans-serif;
+    background-attachment: fixed; /* Optional: makes the background fixed during scroll */
+    /*background-size: contain; Makes sure the entire image is visible */
+    /* background-color: #D1E9F6; */

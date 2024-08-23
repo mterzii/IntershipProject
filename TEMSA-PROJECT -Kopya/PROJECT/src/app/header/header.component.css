@@ -1,0 +1,99 @@
+
+h1 {
+    text-align: center;
+    display: inline-block;
+    margin: 60px 40px;
+    color: white;
+}
+
+.input-group-value-options {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    gap: 20px;
+    justify-items: center;
+    margin-bottom: 3rem;
+    padding-bottom: 45px;
+    border-bottom: solid 1px white;
+}
+
+select {
+    width: 200px;
+    height: 30px;
+}
+.section {
+    display: contents;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    margin: 15px 0;
+}
+
+.section label,
+.section select,
+.section .score input {
+    display: block;
+    text-align: center;
+    width: 100%;
+    margin: 0;
+}
+
+.section label {
+    text-align: left;
+    padding-right: 10px;
+    margin-left: 200px;
+    color: white;
+}
+
+.section select, 
+.section .score input {
+    width: 180px;
+}
+
+.score input {
+    margin-left: 0;
+
+}
+
+.total {
+   margin-right: 10px;
+}
+
+.total-calculator
+{
+    position: relative;
+    left: 940px;
+}
+
+.input-group-value-options {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+    align-items: center;
+    width: 100%;
+}
+
+.section {
+    display: contents;
+}
+
+.section label,
+.section select,
+.section .score input {
+    display: block;
+    text-align: center;
+    width: 100%;
+}
+
+.total-section .score {
+    grid-column: 3; /* Score sütunuyla hizalanır */
+}
+
+#total-input {
+    text-align: center;
+    font-weight: bold;
+}
+
+.h1
+{
+    position: relative;
+    left: 100px;
+}

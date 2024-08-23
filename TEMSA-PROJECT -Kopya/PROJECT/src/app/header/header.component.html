@@ -1,0 +1,20 @@
+<div class="input-group-value-options">
+    <h1 class="h1">VALUE</h1>
+    <h1>OPTIONS</h1>
+    <h1>SCORE</h1>
+
+    <p class="section" *ngFor="let item of items; let i = index">
+        <label [for]="item.id">{{ item.label }}</label>
+        <select [id]="item.id" [name]="item.name" (change)="onSelectChange($event, i)">
+            <option *ngFor="let option of item.options" [value]="option.value">{{ option.text }}</option>
+        </select>
+        <span class="score">
+            <input type="text" [value]="scores[i]" >
+        </span>
+    </p>
+
+    <p class="section total-section">
+        <span class="score">
+        <input type="text" id="total-input" [value]="totalScore" readonly>        </span>
+    </p>
+</div>
